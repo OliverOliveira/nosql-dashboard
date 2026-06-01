@@ -1,0 +1,33 @@
+{
+  "name": "csv-analytics-api",
+  "version": "1.0.0",
+  "description": "API para upload, processamento e análise de arquivos CSV/Excel",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "@fastify/multipart": "^10.0.0",
+    "@fastify/swagger": "^9.5.1",
+    "@fastify/swagger-ui": "^5.2.3",
+    "csv-parser": "^3.2.1",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.4.0",
+    "fastify-plugin": "^5.1.0",
+    "firebase-admin": "^13.10.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
